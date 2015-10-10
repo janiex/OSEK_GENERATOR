@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NewOSEKGen">
+</Property><Property Name="Solution File" Value="F:\VS\OSEK_GENERATOR\NewOSEKGen.sln">
+</Property><Property Name="Date" Value="25 май 2011 г.">
+</Property><Property Name="Time" Value="14:49 ч.">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="NewOSEKGen.sln" Description="File successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen.sln">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\NewOSEKGen.csproj" Description="Project file successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\NewOSEKGen.csproj">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\NewOSEKGen.csproj.user" Description="Project user file successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\NewOSEKGen.csproj.user">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\AssemblyInfo.cs" Description="File successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\Form1.cs" Description="File successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\Form1.cs">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\Task.cs" Description="File successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\Task.cs">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\App.ico" Description="File successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\App.ico">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\Form1.resx" Description="File successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\Form1.resx">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\Logo.jpg" Description="File successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\Logo.jpg">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\options.ico" Description="File successfully backed up as F:\VS\OSEK_GENERATOR\Backup\NewOSEKGen\options.ico">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\NewOSEKGen.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="NewOSEKGen" Source="NewOSEKGen\NewOSEKGen.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="NewOSEKGen.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="NewOSEKGen.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NewOSEKGen" Source="NewOSEKGen\NewOSEKGen.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

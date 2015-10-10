@@ -1,0 +1,144 @@
+OS {
+    BOOLEAN STACKCHECK = TRUE;
+    BOOLEAN ERRORHOOK = TRUE;
+    BOOLEAN STARTUPHOOK = TRUE;
+    BOOLEAN SHUTDOWNHOOK = TRUE;
+    BOOLEAN PRETASKHOOK = TRUE;
+    BOOLEAN POSTTASKHOOK = TRUE;
+    BOOLEAN PREISRHOOK = TRUE;
+    BOOLEAN POSTISRHOOK = TRUE;
+    BOOLEAN INTERRUPTNESTING = ;
+};
+TASK TASK_5ms
+{
+    TYPE = BASIC;
+    PRIORITY = 99;
+    ACTIVATION = 1;
+    SCHEDULE = NON;
+    CALLSCHEDULER = NO;
+    STACKSIZE = 256;
+    EVENT = ;
+    RESOURCE = ;
+    AUTOSTART = FALSE;
+};
+TASK TASK_10ms
+{
+    TYPE = BASIC;
+    PRIORITY = 50;
+    ACTIVATION = 1;
+    SCHEDULE = NON;
+    CALLSCHEDULER = NO;
+    STACKSIZE = 256;
+    EVENT = ;
+    RESOURCE = ;
+    AUTOSTART = FALSE;
+};
+TASK TASK_20ms
+{
+    TYPE = BASIC;
+    PRIORITY = 45;
+    ACTIVATION = 1;
+    SCHEDULE = NON;
+    CALLSCHEDULER = DONTKNOW;
+    STACKSIZE = 256;
+    EVENT = ;
+    RESOURCE = ;
+    AUTOSTART = FALSE;
+};
+TASK TASK_50ms
+{
+    TYPE = BASIC;
+    PRIORITY = 40;
+    ACTIVATION = 1;
+    SCHEDULE = NON;
+    CALLSCHEDULER = NO;
+    STACKSIZE = 256;
+    EVENT = ;
+    RESOURCE = ;
+    AUTOSTART = FALSE;
+};
+TASK TASK_100ms
+{
+    TYPE = BASIC;
+    PRIORITY = 45;
+    ACTIVATION = 1;
+    SCHEDULE = NON;
+    CALLSCHEDULER = NO;
+    STACKSIZE = 256;
+    EVENT = ;
+    RESOURCE = ;
+    AUTOSTART = FALSE;
+};
+COUNTER COUNTER_SYS
+{
+    TIMER = TIMER_A;
+    MINCYCLE = 1;
+    MAXALLOWEDVALUE = 10000;
+    TICKPERBASE = 1000;
+    TIME_IN_NS = 1000000;
+};
+ALARM ALARM_5ms
+{
+    COUNTER = COUNTER_SYS;
+    ACTION = ACTIVATETASK;
+        {
+            TASK = TASK_5ms;
+        };
+    AUTOSTART = TRUE;
+        {
+            ALARMTIME = 5;
+            CYCLETIME = 5;
+        };
+};
+ALARM ALARM_10ms
+{
+    COUNTER = COUNTER_SYS;
+    ACTION = ACTIVATETASK;
+        {
+            TASK = TASK_10ms;
+        };
+    AUTOSTART = TRUE;
+        {
+            ALARMTIME = 10;
+            CYCLETIME = 10;
+        };
+};
+ALARM ALARM_20ms
+{
+    COUNTER = COUNTER_SYS;
+    ACTION = ACTIVATETASK;
+        {
+            TASK = TASK_20ms;
+        };
+    AUTOSTART = TRUE;
+        {
+            ALARMTIME = 20;
+            CYCLETIME = 20;
+        };
+};
+ALARM ALARM_50ms
+{
+    COUNTER = COUNTER_SYS;
+    ACTION = ACTIVATETASK;
+        {
+            TASK = TASK_50ms;
+        };
+    AUTOSTART = TRUE;
+        {
+            ALARMTIME = 50;
+            CYCLETIME = 50;
+        };
+};
+ALARM ALARM_100ms
+{
+    COUNTER = COUNTER_SYS;
+    ACTION = ACTIVATETASK;
+        {
+            TASK = TASK_100ms;
+        };
+    AUTOSTART = TRUE;
+        {
+            ALARMTIME = 100;
+            CYCLETIME = 100;
+        };
+};

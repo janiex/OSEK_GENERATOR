@@ -1,0 +1,214 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F9348E8-1A3B-49C4-8817-9FCA41541352}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>options1.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>KristianOSGenerator</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NewOSEKGen</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alarm.c" />
+    <EmbeddedResource Include="Alarm.h" />
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="HW_config.h" />
+    <EmbeddedResource Include="interrupts.h" />
+    <EmbeddedResource Include="main.c" />
+    <EmbeddedResource Include="MCU_HAL.c" />
+    <Content Include="Folder.jpg" />
+    <EmbeddedResource Include="Includes\Alarm.h" />
+    <EmbeddedResource Include="Includes\common.h" />
+    <EmbeddedResource Include="Includes\Compiler.h" />
+    <EmbeddedResource Include="Includes\Counter.h" />
+    <EmbeddedResource Include="Includes\Macros.h" />
+    <EmbeddedResource Include="Includes\OS_cfg.h" />
+    <EmbeddedResource Include="Includes\OS_Types.h" />
+    <EmbeddedResource Include="Includes\Platform_Types.h" />
+    <EmbeddedResource Include="Includes\Std_types.h" />
+    <EmbeddedResource Include="Includes\Task.h" />
+    <Content Include="options1.ico" />
+    <EmbeddedResource Include="Root\UserTasks.c" />
+    <EmbeddedResource Include="Root\Task.c" />
+    <EmbeddedResource Include="Root\Schedule.c" />
+    <EmbeddedResource Include="Root\MyISR.asm" />
+    <EmbeddedResource Include="Root\Main.c" />
+    <EmbeddedResource Include="Root\InitHW.c" />
+    <EmbeddedResource Include="Root\DSP2833x_GlobalVariableDefs.c" />
+    <EmbeddedResource Include="Root\DefaultInt.c" />
+    <EmbeddedResource Include="Root\Counter.c" />
+    <EmbeddedResource Include="Root\Alarm.c" />
+    <EmbeddedResource Include="Root\DSP2833x_Device.h" />
+    <EmbeddedResource Include="Files\DefaultISR.h" />
+    <EmbeddedResource Include="Files\DSP2833x_Adc.h" />
+    <EmbeddedResource Include="Files\DSP2833x_CpuTimers.h" />
+    <EmbeddedResource Include="Files\DSP2833x_DevEmu.h" />
+    <EmbeddedResource Include="Files\DSP2833x_Device.h" />
+    <EmbeddedResource Include="Files\DSP2833x_DMA.h" />
+    <EmbeddedResource Include="Files\DSP2833x_ECan.h" />
+    <EmbeddedResource Include="Files\DSP2833x_ECap.h" />
+    <EmbeddedResource Include="Files\DSP2833x_EPwm.h" />
+    <EmbeddedResource Include="Files\DSP2833x_EQep.h" />
+    <EmbeddedResource Include="Files\DSP2833x_Gpio.h" />
+    <EmbeddedResource Include="Files\DSP2833x_I2c.h" />
+    <EmbeddedResource Include="Files\DSP2833x_Mcbsp.h" />
+    <EmbeddedResource Include="Files\DSP2833x_PieCtrl.h" />
+    <EmbeddedResource Include="Files\DSP2833x_PieVect.h" />
+    <EmbeddedResource Include="Files\DSP2833x_Sci.h" />
+    <EmbeddedResource Include="Files\DSP2833x_Spi.h" />
+    <EmbeddedResource Include="Files\DSP2833x_SysCtrl.h" />
+    <EmbeddedResource Include="Files\DSP2833x_Xintf.h" />
+    <EmbeddedResource Include="Files\DSP2833x_XIntrupt.h" />
+    <EmbeddedResource Include="Files\HW_Config.h" />
+    <EmbeddedResource Include="Files\InitHW.h" />
+    <EmbeddedResource Include="OS_Arch.h" />
+    <EmbeddedResource Include="OS_Cfg.h" />
+    <EmbeddedResource Include="Schedule.c" />
+    <EmbeddedResource Include="Tables.h" />
+    <EmbeddedResource Include="Task.c" />
+    <EmbeddedResource Include="Task.h" />
+    <EmbeddedResource Include="BasicTypes.h" />
+    <EmbeddedResource Include="common.h" />
+    <EmbeddedResource Include="Counter.c" />
+    <EmbeddedResource Include="Counter.h" />
+    <EmbeddedResource Include="Event.c" />
+    <EmbeddedResource Include="Event.h" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Alarm.cs" />
+    <Compile Include="Analysis.cs" />
+    <Compile Include="AnalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalysisForm.Designer.cs">
+      <DependentUpon>AnalysisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Counter.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OS.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SortTasks.cs" />
+    <Compile Include="Task.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logo.jpg" />
+    <EmbeddedResource Include="options.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnalysisForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interrupts.s43" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Root\28335_RAM_lnk.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Root\DSP2833x_Headers_nonBIOS.cmd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

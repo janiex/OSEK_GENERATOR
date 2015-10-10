@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewOSEKGen", "NewOSEKGen\NewOSEKGen.csproj", "{8F9348E8-1A3B-49C4-8817-9FCA41541352}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8F9348E8-1A3B-49C4-8817-9FCA41541352}.Debug.ActiveCfg = Debug|.NET
+		{8F9348E8-1A3B-49C4-8817-9FCA41541352}.Debug.Build.0 = Debug|.NET
+		{8F9348E8-1A3B-49C4-8817-9FCA41541352}.Release.ActiveCfg = Release|.NET
+		{8F9348E8-1A3B-49C4-8817-9FCA41541352}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
