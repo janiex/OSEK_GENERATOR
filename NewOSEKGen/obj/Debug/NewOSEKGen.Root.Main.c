@@ -424,7 +424,7 @@ void Dispatch(void)
 	{
 		(void)IAdvanceCounter(Timer_A_Counters[i]);	
 	}
-
+	Schedule();
 }
 
 
