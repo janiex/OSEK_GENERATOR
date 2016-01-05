@@ -1,4 +1,4 @@
- .cdecls C,LIST, "msp430xG46x.h"
+ .cdecls C,LIST, "msp430.h"
  .cdecls C,LIST, "interrupts.h"
 ; 	EXTERN mult ; function in example3.c
  			.text	;Program Start
@@ -18,10 +18,3 @@ OSEK_SYSTEM_TICK
 	 		mov R12, SP	
 RESTORE:	popm.w #12,R15
  			reti
-		
-;------------------------------------------------------------------------------
-;			Interrupt Vectors
-;-----------------------------------------------------------------------------
-            .sect	".int16"    		    ; Timer_A0 Vector
-            .short   OSEK_SYSTEM_TICK     ;
-            .end

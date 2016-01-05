@@ -1,8 +1,6 @@
 
 /* Standard includes. */
-
-
-#include <msp430xG46x.h>
+#include <msp430.h>
 #include "HW_config.h"
 #include "Tables.h"
 #include "Counter.h"
@@ -151,7 +149,7 @@ void vPortYieldProcessor(void)
 static unsigned char PutChar(unsigned char p)
 	{
 
-		 while(!(IFG2&UCA0TXIFG));
+		while (!(UCA0IFG&UCTXIFG));             // USCI_A0 TX buffer ready?
 		UCA0TXBUF = p;
 		return 0;
 	}
@@ -466,7 +464,7 @@ void Dispatch(void)
 	{
 		(void)IAdvanceCounter(Timer_A_Counters[i]);	
 	}
-
+	Schedule();
 }
 
 void TerminateTsk(void)
