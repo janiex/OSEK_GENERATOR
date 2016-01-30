@@ -147,12 +147,12 @@ void vPortYieldProcessor(void)
 **                                                                            **
 *******************************************************************************/
 static unsigned char PutChar(unsigned char p)
-	{
+ {
 
-		while (!(UCA0IFG&UCTXIFG));             // USCI_A0 TX buffer ready?
-		UCA0TXBUF = p;
-		return 0;
-	}
+  while (!(UCA3IFG&UCTXIFG));             // USCI_A0 TX buffer ready?
+  UCA3TXBUF = p;     // UCTXIFG is set when UCAxTXBUF empty
+  return 0;
+ }
 	
 void SendString(unsigned char *pcString)
 {
