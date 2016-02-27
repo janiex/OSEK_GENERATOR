@@ -30,17 +30,6 @@ void StartupHook(void);
 #endif
 void TerminateTsk(void);
 
-static unsigned char PutChar(unsigned char p);	
-void SendString(unsigned char *pcString);
-/*
- * Configure the processor for use with the Olimex demo board.  This includes
- * setup for the I/O, system clock, and access timings.
- */
-//void vPortYieldProcessor( void );
-
-/*******************************************************************************
- **                  Interrupt handlers                                       **
- *******************************************************************************/
 
 /*******************************************************************************
  **                    Local Variables                                        **
@@ -131,40 +120,6 @@ void vPortYieldProcessor(void)
 {
 
 }
-/*******************************************************************************
-**                                                                            **
-** FUNC-NAME     :                                                            **
-**                                                                            **
-** DESCRIPTION   :                                                            **
-**                                                                            **
-** PRECONDITIONS :                                                            **
-**                                                                            **
-** PARAMETER     :                                                            **
-**                                                                            **
-** RETURN        :                                                            **
-**                                                                            **
-** REMARKS       :                                                            **
-**                                                                            **
-*******************************************************************************/
-static unsigned char PutChar(unsigned char p)
- {
-
-  while (!(UCA3IFG&UCTXIFG));             // USCI_A0 TX buffer ready?
-  UCA3TXBUF = p;     // UCTXIFG is set when UCAxTXBUF empty
-  return 0;
- }
-	
-void SendString(unsigned char *pcString)
-{
-unsigned char *pxNext;
-pxNext = ( unsigned char * ) pcString;
-	while( *pxNext )
-	{
-		(void)PutChar( *pxNext);
-		pxNext++;
-	}
-}
-
 
 
 /*******************************************************************************

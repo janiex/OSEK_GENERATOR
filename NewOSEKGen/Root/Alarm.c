@@ -106,13 +106,13 @@ AlarmIncrementType IncrementAlarm(AlarmType AlarmID, AlarmIncrementType Incremen
 							AlarmsConst[AlarmID].AlarmActionInfo.CallbackFunction();
 						}
 						break;
-#if (NO_EVENTS == DISABLE)
+#if (EVENT_ENABLED == ENABLED)
 					case SETEVENT:
                         // TODO: Kristian enable this, when task is ready.
                         /* set event */
 						// SetEvent(AlarmsConst[AlarmID].AlarmActionInfo.TaskID, AlarmsConst[AlarmID].AlarmActionInfo.Event);
 						break;
-#endif /* #if (NO_EVENTS == DISABLE) */
+#endif /* #if (EVENT_ENABLED == ENABLED) */
 					default:
 						/* some error */
 						/* possibly TODO, report an error */

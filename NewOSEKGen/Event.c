@@ -381,6 +381,9 @@ StatusType OS_WaitEvent
 
 	return ret;
 }
+
+
+
 /** @} doxygen end group definition */
 /** @} doxygen end group definition */
 /*==================[end of file]============================================*/
