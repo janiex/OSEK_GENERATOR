@@ -109,6 +109,7 @@
     <EmbeddedResource Include="Includes\Std_types.h" />
     <EmbeddedResource Include="Includes\Task.h" />
     <Content Include="options1.ico" />
+    <EmbeddedResource Include="MCU_HAL.h" />
     <EmbeddedResource Include="Root\UserTasks.c" />
     <EmbeddedResource Include="Root\Task.c" />
     <EmbeddedResource Include="Root\Schedule.c" />
@@ -206,6 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
