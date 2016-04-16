@@ -419,7 +419,10 @@ void Dispatch(void)
 	{
 		(void)IAdvanceCounter(Timer_A_Counters[i]);	
 	}
-	Schedule();
+	if(TasksConst[GetRunningTask()].ConstFlags.Preemtive)
+	{
+		Schedule();
+	}
 }
 
 void TerminateTsk(void)
