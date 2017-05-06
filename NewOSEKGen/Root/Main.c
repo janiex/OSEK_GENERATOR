@@ -113,9 +113,8 @@ void StartOS(AppModeType Mode)
 #endif
 
 	IntSecure_End();
-
-	//SetRunningTask(GetRunningTask());
-	SetRunningTask(Task_IDLE);
+	/* Check if there is a task which is ready to be started immediately */
+	Schedule();
 	/* set actual context task */
 	SetActualContext(CONTEXT_TASK);
 	
@@ -424,7 +423,10 @@ void Dispatch(void)
 	{
 		(void)IAdvanceCounter(Timer_A_Counters[i]);	
 	}
-	Schedule();
+	// just in case the task is pre-emptive check for higher priority
+	if (TasksConst[GetRunningTask()].ConstFlags.Preemtive) {
+		Schedule();
+	}
 }
 
 
